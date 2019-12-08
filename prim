@@ -1,0 +1,17 @@
+class prim:
+ 
+    def start(self, wt, value, model):
+        self.wt = wt
+        self.value = value
+        self.model = model
+
+prim_a = prim()  
+prim_a.start(1, 0, 0) 
+prim_b = prim()
+prim_b.start(0, 0, 1)
+c_wt = prim_a.wt + prim_b.wt
+c_value = prim_a.value + prim_b.value
+c_model = prim_a.model + prim_b.model
+print('wt', prim_a.wt, prim_b.wt, c_wt)  
+print('value', prim_a.value, prim_b.value, c_value)  
+print('model', prim_a.model, prim_b.model, c_model)  
